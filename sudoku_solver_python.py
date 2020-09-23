@@ -23,9 +23,9 @@ def solve_sudoku(arr):
 		if(is_valid(arr, row, col, x)): 
 			  
 			# make tentative assignment 
-			arr[row][col]= x
+			arr[row][col] = x
 
-			if(solve_sudoku(arr)): 
+			if(solve_sudoku(arr)):
 				return True
 
 			# if run fails, reset to 0 then backtracks
