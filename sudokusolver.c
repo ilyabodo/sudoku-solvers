@@ -27,7 +27,7 @@ int main(void) {
     return 0;
 }
 
-// Main method that solves the sudoku using backtracking
+// Main function that solves the sudoku using backtracking
 int solve_sudoku(int arr[9][9]) {
 
     int next_loc[2] = {-1, -1}; // initalizes the next location to an invalid location
