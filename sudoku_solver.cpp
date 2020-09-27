@@ -39,7 +39,7 @@ bool solve_sudoku(int arr[9][9]) {
     
     // loops through the digits 1-9 for a given location
     for (int x = 1; x < 10; x++) {
-        if(is_valid(arr, row, col, x) == 1) { // checks if the digit is valid at this row,column
+        if(is_valid(arr, row, col, x)) { // checks if the digit is valid at this row,column
             arr[row][col] = x;
 
             // Recursivly calls solver until no digit works in a location, then causes backtrack
